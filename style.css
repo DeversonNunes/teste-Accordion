@@ -1,0 +1,89 @@
+html{
+    background-color: #e5e5e5;
+}
+
+main{
+    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acordeon{
+    display: flex;
+    width: 655px;
+    min-height: 347px;
+    background-color: #fff;
+    box-shadow:  0 27px 49px -25px;
+    position: relative;
+    align-items: center;
+}
+.acordeon .ilustracao{
+    position: absolute;
+    left: -90px;
+}
+.acordeon .conteudo{
+    width: 90%;
+    padding-left: 225px;
+}
+.acordeon .conteudo h1{
+font-size: 25px;
+font-weight: 700;
+line-height: 20px;
+margin-bottom: 30px;
+
+}
+.acordeon .items{
+    list-style: none;
+}
+.acordeon .item{
+    cursor: pointer;
+    background: url(src/imagem/Design\ sem\ nome\ \(5\)\ 1.png)no-repeat;
+    background-position: top 8px right;
+    background-size: 12px;
+    border-bottom: 1px solid#cccc;
+  margin: 10px;
+}
+.acordeon .items .item:last-child{
+    border-bottom: none;
+
+}
+
+.acordeon .pergunta{
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    font-size: 17px;
+    font-weight: 500px;
+    width: 90%;
+
+    
+}
+.pergunta:hover{
+    color: #f47c57;
+}
+.resposta{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.resposta:hover{
+    /* border: 1px solid rgba(212, 212, 212, 1) */
+    border: solid 1px #0000cd;
+}
+.acordeon .items .item.ativo h2{
+    font-weight: 700;
+    font-size: 17px;
+}
+.acordeon .items .item.ativo .resposta{
+   display: block;
+
+}
+.acordeon .items .item.ativo{
+    background: url(src/imagem/seta\ aberta.png)no-repeat;
+    background-position: top 8px right;
+}
+
+
+
+    
