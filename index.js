@@ -10,9 +10,11 @@
          if (itemAtivoAtual) {
  itemAtivoAtual.classList.remove("ativo")
          }
+      else{
          item.classList.add("ativo")        
          console.log(itemAtivoAtual)
-
+      }
+      
         
      })
  })
